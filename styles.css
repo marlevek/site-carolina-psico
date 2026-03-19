@@ -1154,6 +1154,15 @@ select {
     min-height: 78px;
   }
 
+  .site-footer {
+    padding-bottom: calc(8rem + env(safe-area-inset-bottom, 0px));
+  }
+
+  .footer-inner {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   .top-nav {
     display: none;
   }
@@ -1228,6 +1237,10 @@ select {
     overflow: hidden;
   }
 
+  .site-footer {
+    padding-bottom: calc(8rem + env(safe-area-inset-bottom, 0px));
+  }
+
   .hero-section {
     padding-top: 3.8rem;
   }
@@ -1244,8 +1257,7 @@ select {
     margin-top: -3.35rem;
   }
 
-  .btn,
-  .floating-whatsapp {
+  .btn {
     width: 100%;
   }
 
@@ -1267,7 +1279,15 @@ select {
 
   .floating-whatsapp {
     right: 1rem;
-    bottom: 1rem;
+    bottom: calc(1rem + env(safe-area-inset-bottom, 0px));
+    width: auto;
+    max-width: calc(100% - 2rem);
+    min-height: 54px;
+    padding: 0.85rem 1rem;
+  }
+
+  .floating-whatsapp-label {
+    font-size: 0.95rem;
   }
 }
 
