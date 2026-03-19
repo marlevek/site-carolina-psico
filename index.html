@@ -10,8 +10,17 @@
   >
   <meta name="robots" content="noindex, nofollow">
   <meta name="theme-color" content="#F6F1FB">
+  <meta name="application-name" content="Carolina Cunha Levek">
   <!-- URL de preview; trocar para o domínio final quando o site for publicado oficialmente -->
   <link rel="canonical" href="https://carolina.codertec.com.br/">
+  <link rel="manifest" href="site.webmanifest">
+  <!-- Favicons prontos para ativar quando os arquivos finais forem adicionados em assets/branding/ -->
+  <!--
+  <link rel="icon" type="image/svg+xml" href="assets/branding/favicon.svg">
+  <link rel="icon" sizes="32x32" href="assets/branding/favicon-32x32.png">
+  <link rel="icon" sizes="16x16" href="assets/branding/favicon-16x16.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="assets/branding/apple-touch-icon.png">
+  -->
   <meta property="og:type" content="website">
   <meta property="og:locale" content="pt_BR">
   <meta property="og:title" content="Carolina Cunha Levek, Psicóloga | Curitiba">
@@ -86,8 +95,13 @@
   <header class="site-header">
     <div class="container header-inner">
       <div class="brand-block">
-        <span class="eyebrow">Psicóloga</span>
-        <p class="brand-name">Carolina Cunha Levek</p>
+        <a class="brand-link" href="#inicio" aria-label="Voltar ao início">
+          <!-- Quando o logo final estiver pronto, adicione aqui uma imagem com a classe brand-logo. -->
+          <span class="brand-text">
+            <span class="eyebrow">Psicóloga</span>
+            <span class="brand-name">Carolina Cunha Levek</span>
+          </span>
+        </a>
       </div>
 
       <nav class="top-nav" aria-label="Navegação principal">

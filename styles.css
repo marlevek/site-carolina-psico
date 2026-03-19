@@ -133,8 +133,27 @@ select {
   gap: 0.18rem;
 }
 
+.brand-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.9rem;
+}
+
+.brand-text {
+  display: grid;
+  gap: 0.18rem;
+}
+
+.brand-logo {
+  width: 56px;
+  height: 56px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
 .brand-name {
   margin: 0;
+  display: block;
   font-family: "Playfair Display", serif;
   font-size: 1.2rem;
   letter-spacing: 0.02em;
