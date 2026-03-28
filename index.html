@@ -32,7 +32,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css2?family=Cormorant:ital,wght@1,400;1,500;1,600&family=DM+Sans:wght@400;500;700&family=Playfair+Display:wght@500;600;700&display=swap"
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600&family=DM+Sans:wght@400;500;700&display=swap"
     rel="stylesheet"
   >
   <link rel="stylesheet" href="styles-v2.css">
@@ -150,29 +150,40 @@
     <!-- Seção 1: Hero -->
     <section class="hero-section" id="inicio">
       <div class="hero-backdrop" aria-hidden="true"></div>
-      <div class="container hero-grid">
-        <div class="hero-copy" data-reveal>
-          <h1>
-            Você sente que está vivendo os mesmos conflitos nas suas relações?
-          </h1>
-          <p class="hero-text">
-            A terapia pode te ajudar a compreender esses padrões, lidar com ansiedade e construir vínculos mais saudáveis.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#agendar">Agendar primeira sessão</a>
-          </div>
-        </div>
+      <div class="container">
+        <div class="hero-shell">
+          <div class="hero-grid">
+            <div class="hero-copy" data-reveal>
+              <h1>
+                Você sente que está vivendo os mesmos conflitos nas suas
+                <span class="hero-highlight">relações</span>?
+              </h1>
+              <p class="hero-text">
+                A terapia pode te ajudar a compreender esses padrões, lidar com ansiedade e construir vínculos mais saudáveis.
+              </p>
+              <div class="hero-actions">
+                <a class="btn btn-primary" href="#agendar">Agendar primeira sessão</a>
+              </div>
+              <div class="hero-pills" aria-label="Informações principais">
+                <span class="hero-pill">Atendimento online e presencial</span>
+                <span class="hero-pill">Abordagem relacional sistêmica</span>
+              </div>
+            </div>
 
-        <div class="hero-art" data-reveal>
-          <div class="hero-photo-card">
-            <img
-              class="hero-photo"
-              src="foto_carol_psico.png"
-              alt="Foto de Carolina Cunha Levek"
-              width="360"
-              height="360"
-              loading="eager"
-            >
+            <div class="hero-art" data-reveal>
+              <div class="hero-photo-stage">
+                <div class="hero-photo-card">
+                  <img
+                    class="hero-photo"
+                    src="foto_carol_psico.png"
+                    alt="Foto de Carolina Cunha Levek"
+                    width="231"
+                    height="346"
+                    loading="eager"
+                  >
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -188,7 +199,7 @@
     <section class="content-section identification-section">
       <div class="container">
         <div class="section-heading" data-reveal>
-          <h2>Se relacionar tem sido difícil para você?</h2>
+          <h2>Se relacionar tem sido difícil <span class="nowrap">para você?</span></h2>
           <p>Talvez você esteja passando por isso:</p>
         </div>
 
@@ -216,26 +227,26 @@
     <section class="content-section therapy-section" id="sobre-a-terapia">
       <div class="container split-layout therapy-layout">
         <div class="section-heading therapy-copy" data-reveal>
-          <span class="eyebrow">Escuta e constru&ccedil;&atilde;o</span>
           <h2>Sobre a terapia</h2>
           <p>
-            A partir da terapia relacional sist&ecirc;mica, olhamos para os padr&otilde;es que voc&ecirc; construiu ao longo da sua hist&oacute;ria, especialmente nas suas rela&ccedil;&otilde;es.
+            A terapia &eacute; um espa&ccedil;o para voc&ecirc; falar sobre o que est&aacute; vivendo, no seu tempo e do seu jeito.
           </p>
           <p>
-            Muitas vezes, repetimos din&acirc;micas sem perceber. Na terapia, voc&ecirc; aprende a identificar esses ciclos, compreender suas emo&ccedil;&otilde;es e construir novas formas de se relacionar consigo e com o outro.
+            Ao longo da vida, vamos construindo formas de nos relacionar e, muitas vezes, repetimos algumas situa&ccedil;&otilde;es sem perceber. Na terapia, voc&ecirc; pode olhar para isso com mais clareza, compreender melhor suas emo&ccedil;&otilde;es e encontrar novas formas de lidar com o que sente e com as suas rela&ccedil;&otilde;es.
+          </p>
+          <p>
+            &Eacute; tamb&eacute;m um espa&ccedil;o de escuta e acolhimento, sem julgamentos, onde voc&ecirc; pode se sentir &agrave; vontade para ser quem &eacute;.
           </p>
         </div>
 
         <aside class="list-panel listening-panel therapy-listening-panel" data-reveal aria-label="Escuta sist&ecirc;mica">
           <div class="hero-art-copy">
             <span class="art-label">Escuta sist&ecirc;mica</span>
-            <p class="quote-mark">"</p>
             <p class="hero-quote">
-              V&iacute;nculos sinceros come&ccedil;am quando voc&ecirc; se reconhece com mais verdade, presen&ccedil;a e cuidado.
+              <span class="quote-inline" aria-hidden="true">&ldquo;</span>V&iacute;nculos sinceros come&ccedil;am quando voc&ecirc; se reconhece com mais verdade, presen&ccedil;a e cuidado.<span class="quote-inline" aria-hidden="true">&rdquo;</span>
             </p>
             <div class="hero-art-footer">
               <span class="hero-signature">Carolina Levek</span>
-              <span class="hero-rule" aria-hidden="true"></span>
             </div>
           </div>
         </aside>
@@ -249,14 +260,12 @@
 
     <!-- Seção 4: Benefícios -->
     <section class="content-section benefits-section">
-      <div class="container benefits-layout">
-        <div class="section-heading" data-reveal>
-          <span class="eyebrow">Transforma&ccedil;&otilde;es poss&iacute;veis</span>
-          <h2>O que voc&ecirc; pode conquistar</h2>
+        <div class="container benefits-layout">
+          <div class="section-heading" data-reveal>
+            <h2>N&atilde;o &eacute; preciso estar &ldquo;no limite&rdquo; para buscar ajuda.</h2>
         </div>
 
         <div class="benefits-text" data-reveal>
-          <p class="benefits-lead"><strong>N&atilde;o &eacute; preciso estar &ldquo;no limite&rdquo; para buscar ajuda</strong></p>
           <p>Muitas pessoas procuram terapia apenas quando j&aacute; est&atilde;o muito sobrecarregadas.</p>
           <p>Mas a terapia tamb&eacute;m pode ser um espa&ccedil;o de preven&ccedil;&atilde;o, autoconhecimento e desenvolvimento emocional.</p>
         </div>
@@ -323,7 +332,6 @@
     <section class="content-section process-section" id="como-funciona">
       <div class="container">
         <div class="section-heading" data-reveal>
-          <span class="eyebrow">Modalidades de atendimento</span>
           <h2>Como funciona</h2>
         </div>
 
