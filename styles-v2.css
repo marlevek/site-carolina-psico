@@ -149,6 +149,11 @@ select {
   gap: 0.18rem;
 }
 
+.brand-block {
+  flex: 0 1 auto;
+  min-width: 0;
+}
+
 .brand-link {
   display: inline-flex;
   align-items: center;
@@ -200,9 +205,12 @@ select {
 
 .top-nav {
   display: flex;
+  flex: 1 1 auto;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: flex-end;
   gap: 1.45rem;
+  min-width: 0;
   font-size: 0.96rem;
 }
 
@@ -1247,7 +1255,18 @@ select {
   }
 }
 
-@media (max-width: 960px) {
+@media (max-width: 1080px) {
+  .top-nav {
+    gap: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .nav-crp {
+    display: none;
+  }
+}
+
+@media (max-width: 860px) {
   .hero-grid,
   .split-layout,
   .process-grid {
