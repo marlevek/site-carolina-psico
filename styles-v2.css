@@ -166,8 +166,9 @@ select {
 }
 
 .brand-logo {
-  width: 56px;
-  height: 56px;
+  width: clamp(150px, 16vw, 190px);
+  height: auto;
+  max-height: 72px;
   object-fit: contain;
   flex: 0 0 auto;
 }
